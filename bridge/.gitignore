@@ -15,6 +15,14 @@ migrate_working_dir/
 *.ipr
 *.iws
 .idea/
+.idea/shelf/
+.idea/workspace.xml
+.idea/vsc.xml
+.idea/modules.xml
+.idea/misc.xml
+.idea/Flutter_Plugins.xml
+.idea/Dart_SDK.xml
+.idea/Dart_Packages.xml
 
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
