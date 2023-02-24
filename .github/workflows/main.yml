@@ -13,7 +13,5 @@ on:
 jobs:
   build:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
-    inputs:
-      analyze_directories: "lib"
     with:
       working_directory: "./bridge"
