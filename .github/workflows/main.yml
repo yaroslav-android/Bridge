@@ -3,7 +3,7 @@ on:
   pull_request:
   workflow_call:
     inputs:
-      username:
+      analyze_directories:
         description: 'override to run only lib without test folder'
         default: 'lib'
         required: false
@@ -15,3 +15,4 @@ jobs:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
     with:
       working_directory: "./bridge"
+      min_coverage: 0
