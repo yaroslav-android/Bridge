@@ -1,8 +1,13 @@
 name: CI build
-on: 
+
+on:
   workflow_call:
     inputs:
-      analyze_directories: "lib"
+      analyze_directories:
+        required: false
+        type: string
+        default: "lib"
+
   pull_request
   
 
