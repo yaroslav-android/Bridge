@@ -1,4 +1,4 @@
-package team.uptech.samples.app.bridge.bridge
+package team.uptech.samples.app.bridge
 
 import io.flutter.embedding.android.FlutterActivity
 

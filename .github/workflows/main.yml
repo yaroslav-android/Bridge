@@ -1,6 +1,10 @@
-name: bridge
+name: CI build
 on: pull_request
+  
 
 jobs:
   build:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    with:
+      working_directory: "./bridge"
+      min_coverage: 0
