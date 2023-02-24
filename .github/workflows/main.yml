@@ -4,8 +4,8 @@ on:
   workflow_call:
     inputs:
       username:
-        description: 'A username passed from the caller workflow'
-        default: 'john-doe'
+        description: 'override to run only lib without test folder'
+        default: 'lib'
         required: false
         type: string
   
