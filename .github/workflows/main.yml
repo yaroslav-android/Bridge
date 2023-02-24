@@ -1,13 +1,5 @@
 name: CI build
-on: 
-  pull_request:
-  workflow_call:
-    inputs:
-      analyze_directories:
-        description: 'override to run only lib without test folder'
-        default: 'lib'
-        required: false
-        type: string
+on: pull_request
   
 
 jobs:
