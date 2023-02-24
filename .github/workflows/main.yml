@@ -1,9 +1,13 @@
 name: CI build
-on: pull_request
+on: 
+  workflow_call:
+    inputs:
+      analyze_directories: "lib"
+  pull_request
+  
 
 jobs:
   build:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
     with:
       working_directory: "./bridge"
-      analyze_directories: "lib"
