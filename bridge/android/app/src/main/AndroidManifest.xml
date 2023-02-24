@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="team.uptech.samples.app.bridge.bridge">
+    package="team.uptech.samples.app.bridge">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
