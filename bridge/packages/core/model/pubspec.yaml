@@ -1,0 +1,13 @@
+name: model
+description: core - model
+publish_to: 'none'
+
+environment:
+  sdk: '>=2.19.2 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  very_good_analysis: ^4.0.0
