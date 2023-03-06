@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:onboarding/onboarding.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Text(''),
+      home: const Scaffold(
+        body: SafeArea(child: OnboardingScreen()),
+      ),
     );
   }
 }
