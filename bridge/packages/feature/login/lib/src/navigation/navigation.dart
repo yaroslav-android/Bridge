@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-const String onboardingRoute = 'login';
+const String loginRoute = 'login';
 
-extension OnboardingNavigation on BuildContext {
-  void navigateToLogin() => go(onboardingRoute);
+extension LoginNavigation on BuildContext {
+  void navigateToLogin() => go(loginRoute);
 }
