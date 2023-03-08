@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:login/login.dart';
+import 'package:signup/signup.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const Scaffold(
         body: SafeArea(
-          child: LoginScreen(
+          child: SignUpScreen(
             onNavBackClick: null,
           ),
         ),

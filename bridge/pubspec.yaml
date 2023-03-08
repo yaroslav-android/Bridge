@@ -18,6 +18,8 @@ dependencies:
     path: packages/feature/onboarding
   login:
     path: packages/feature/login
+  signup:
+    path: packages/feature/signup
 
 dev_dependencies:
 
