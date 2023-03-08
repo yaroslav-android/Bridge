@@ -15,7 +15,9 @@ dependencies:
   flutter:
     sdk: flutter
   onboarding:
-    path: 'packages/feature/onboarding'
+    path: packages/feature/onboarding
+  login:
+    path: packages/feature/login
 
 dev_dependencies:
 

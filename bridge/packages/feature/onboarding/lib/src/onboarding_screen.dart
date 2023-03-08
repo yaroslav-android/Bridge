@@ -5,7 +5,14 @@ import 'package:flutter/material.dart';
 import 'package:ui/ui.dart';
 
 class OnboardingScreen extends StatelessWidget {
-  const OnboardingScreen({super.key});
+  const OnboardingScreen({
+    super.key,
+    this.onLoginNavClick,
+    this.onOnboardingNavClick,
+  });
+
+  final VoidCallback? onLoginNavClick;
+  final VoidCallback? onOnboardingNavClick;
 
   @override
   Widget build(BuildContext context) {
@@ -45,19 +52,19 @@ class OnboardingScreen extends StatelessWidget {
           ),
           BridgeButton(
             onClick: () {
-              // TODO(login): context.navigateToRegistration();
+              onOnboardingNavClick?.call();
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: const Size.fromHeight(40),
+              minimumSize: const Size.fromHeight(36),
             ),
             child: const Text('Sign up'),
           ),
           BridgeButton(
             onClick: () {
-              // TODO(login): context.navigateToLogin();
+              onLoginNavClick?.call();
             },
             style: ElevatedButton.styleFrom(
-              minimumSize: const Size.fromHeight(40),
+              minimumSize: const Size.fromHeight(36),
             ),
             child: const Text('Login'),
           ),

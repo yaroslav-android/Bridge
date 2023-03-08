@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:onboarding/onboarding.dart';
+import 'package:login/login.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const Scaffold(
-        body: SafeArea(child: OnboardingScreen()),
+        body: SafeArea(
+          child: LoginScreen(
+            onNavBackClick: null,
+          ),
+        ),
       ),
     );
   }
