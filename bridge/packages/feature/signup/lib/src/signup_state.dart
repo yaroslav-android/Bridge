@@ -36,7 +36,8 @@ class SignUpState implements Copyable<SignUpState> {
   }) {
     return SignUpState(
       isPasswordObscured: isPasswordObscured ?? this.isPasswordObscured,
-      isConfirmPasswordObscured: isConfirmPasswordObscured ?? this.isConfirmPasswordObscured,
+      isConfirmPasswordObscured:
+          isConfirmPasswordObscured ?? this.isConfirmPasswordObscured,
       email: email ?? this.email,
       password: password ?? this.password,
       confirmPassword: confirmPassword ?? this.confirmPassword,

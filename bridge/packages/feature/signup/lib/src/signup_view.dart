@@ -14,7 +14,8 @@ class SignUpView extends StatelessWidget {
     return BlocBuilder<SignUpCubit, SignUpState>(
       builder: (context, state) {
         final iconPassword = _getIcon(isTextObscured: state.isPasswordObscured);
-        final iconConfirmPassword = _getIcon(isTextObscured: state.isConfirmPasswordObscured);
+        final iconConfirmPassword =
+            _getIcon(isTextObscured: state.isConfirmPasswordObscured);
 
         return Column(
           children: [
@@ -37,7 +38,8 @@ class SignUpView extends StatelessWidget {
                   border: OutlineInputBorder(),
                   labelText: 'Nickname',
                 ),
-                onChanged: (value) => context.read<SignUpCubit>().setNickname(value),
+                onChanged: (value) =>
+                    context.read<SignUpCubit>().setNickname(value),
               ),
             ),
             const SizedBox(
@@ -51,7 +53,8 @@ class SignUpView extends StatelessWidget {
                   border: OutlineInputBorder(),
                   labelText: 'Email',
                 ),
-                onChanged: (value) => context.read<SignUpCubit>().setEmail(value),
+                onChanged: (value) =>
+                    context.read<SignUpCubit>().setEmail(value),
               ),
             ),
             const SizedBox(
@@ -72,7 +75,8 @@ class SignUpView extends StatelessWidget {
                     },
                   ),
                 ),
-                onChanged: (value) => context.read<SignUpCubit>().setPassword(value),
+                onChanged: (value) =>
+                    context.read<SignUpCubit>().setPassword(value),
               ),
             ),
             const SizedBox(
@@ -89,11 +93,14 @@ class SignUpView extends StatelessWidget {
                   suffixIcon: IconButton(
                     icon: iconConfirmPassword,
                     onPressed: () {
-                      context.read<SignUpCubit>().toggleObscureConfirmPassword();
+                      context
+                          .read<SignUpCubit>()
+                          .toggleObscureConfirmPassword();
                     },
                   ),
                 ),
-                onChanged: (value) => context.read<SignUpCubit>().setConfirmPassword(value),
+                onChanged: (value) =>
+                    context.read<SignUpCubit>().setConfirmPassword(value),
               ),
             ),
             const SizedBox(

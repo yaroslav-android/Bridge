@@ -10,7 +10,9 @@ class SignUpCubit extends Cubit<SignUpState> {
   }
 
   void toggleObscureConfirmPassword() {
-    emit(state.copy(isConfirmPasswordObscured: !state.isConfirmPasswordObscured));
+    emit(state.copy(
+      isConfirmPasswordObscured: !state.isConfirmPasswordObscured,
+    ));
   }
 
   void setEmail(String email) {

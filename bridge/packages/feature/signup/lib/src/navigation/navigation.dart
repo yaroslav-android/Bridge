@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-const String signUpRoute = 'signup';
+const String signUpRoute = '/signup';
 
 extension SignUpNavigation on BuildContext {
   void navigateToSignUp() => go(signUpRoute);

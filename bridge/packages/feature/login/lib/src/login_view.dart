@@ -41,7 +41,8 @@ class LoginView extends StatelessWidget {
                   border: OutlineInputBorder(),
                   labelText: 'Email',
                 ),
-                onChanged: (value) => context.read<LoginCubit>().setEmail(value),
+                onChanged: (value) =>
+                    context.read<LoginCubit>().setEmail(value),
               ),
             ),
             const SizedBox(
@@ -62,7 +63,8 @@ class LoginView extends StatelessWidget {
                     },
                   ),
                 ),
-                onChanged: (value) => context.read<LoginCubit>().setPassword(value),
+                onChanged: (value) =>
+                    context.read<LoginCubit>().setPassword(value),
               ),
             ),
             const SizedBox(

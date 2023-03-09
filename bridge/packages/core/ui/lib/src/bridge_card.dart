@@ -5,7 +5,12 @@ import 'package:flutter/services.dart';
 import 'package:model/model.dart';
 
 class BridgeCard extends StatelessWidget {
-  const BridgeCard({super.key, required this.rank, required this.suit, required this.size});
+  const BridgeCard({
+    super.key,
+    required this.rank,
+    required this.suit,
+    required this.size,
+  });
 
   final String rank;
   final String suit;

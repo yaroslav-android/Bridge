@@ -1,27 +1,23 @@
+import 'package:bridge/navigation/app_router.dart';
 import 'package:flutter/material.dart';
-import 'package:signup/signup.dart';
 
 void main() {
   runApp(const MyApp());
 }
+
+// FIXME: hardcoded for now, replace with real values from a storage.
+final appRouter = AppRouter(
+  shouldShowOnboarding: true,
+  isLoggedIn: false,
+);
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Bridge Game',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: const Scaffold(
-        body: SafeArea(
-          child: SignUpScreen(
-            onNavBackClick: null,
-          ),
-        ),
-      ),
+    return MaterialApp.router(
+      routerConfig: appRouter.router,
     );
   }
 }
