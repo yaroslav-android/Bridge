@@ -8,11 +8,11 @@ class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({
     super.key,
     this.onLoginNavClick,
-    this.onOnboardingNavClick,
+    this.onSignUpNavClick,
   });
 
   final VoidCallback? onLoginNavClick;
-  final VoidCallback? onOnboardingNavClick;
+  final VoidCallback? onSignUpNavClick;
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +52,7 @@ class OnboardingScreen extends StatelessWidget {
           ),
           BridgeButton(
             onClick: () {
-              onOnboardingNavClick?.call();
+              onSignUpNavClick?.call();
             },
             style: ElevatedButton.styleFrom(
               minimumSize: const Size.fromHeight(36),
