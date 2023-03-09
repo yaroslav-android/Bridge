@@ -1,4 +1,4 @@
-import 'package:bridge/navigation/AppRouter.dart';
+import 'package:bridge/navigation/app_router.dart';
 import 'package:flutter/material.dart';
 
 void main() {
