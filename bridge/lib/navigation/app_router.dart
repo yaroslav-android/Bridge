@@ -18,7 +18,8 @@ class AppRouter {
             }
             return '/';
           },
-          builder: (_, __) => Placeholder(), // TODO(home): replace with real HomeScreen.
+          builder: (_, __) =>
+              Placeholder(), // TODO(home): replace with real HomeScreen.
         ),
 
         /* Auth Routes */
